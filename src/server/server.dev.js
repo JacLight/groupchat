@@ -21,7 +21,7 @@ import SocketIo from 'socket.io';
 const app = express();
 
 //set env vars
-process.env.PORT = process.env.PORT || 3000;
+process.env.PORT = process.env.PORT || 9111;
 
 process.on('uncaughtException', function (err) {
   console.log(err);
