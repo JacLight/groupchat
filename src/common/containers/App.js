@@ -16,7 +16,6 @@ class App extends React.Component {
     dispatch(initEnvironment());
     dispatch(signOut());
     //dispatch(signOut());
-    Parse.initialize('PJCCTCT3NT7ze5BHbMwXuXUUNBYQ0ds2zvxFEioO', 'e3XFBfzsMOWuKb9Kqgn7XcfYLSPwswYiajVS3fGW');
   }
   handleSignOut(){
     const { dispatch } = this.props;
