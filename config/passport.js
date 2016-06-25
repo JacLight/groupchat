@@ -3,7 +3,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var User = require('../src/server/models/User');
 var cookies = require('react-cookie');
 
-var host = process.env.NODE_ENV !== 'production' ? 'localhost:3000' : 'slackclone.herokuapp.com'
+var host = process.env.NODE_ENV !== 'production' ? 'localhost:9111' : 'localhost:9111'
 if (process.env.NODE_ENV !== 'production') {
   var oAuthConfig = require('./oAuthConfig.dev');
 } else {
