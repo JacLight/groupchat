@@ -8,7 +8,7 @@ import ParseReact from 'parse-react';
 // NOTE:Chat actions
 
 function initParse(){
-  Parse.initialize('PJCCTCT3NT7ze5BHbMwXuXUUNBYQ0ds2zvxFEioO', 'e3XFBfzsMOWuKb9Kqgn7XcfYLSPwswYiajVS3fGW');
+  Parse.initialize('Application_ID', 'JavaScript_key');
 }
 
 function parseError(error) {
