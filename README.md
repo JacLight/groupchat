@@ -1,6 +1,6 @@
 # groupchat
 
-Download 
+<b>Download</b> 
 
-npm install
+npm install</br>
 npm start
