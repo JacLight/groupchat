@@ -12,7 +12,7 @@ function initParse(){
 }
 
 function parseError(error) {
-  if (error == 'unauthorized'){
+  if (typeof error !== 'undefined' && typeof error.message !== 'undefined' && error.message != 'unauthorized'){
     alert(error.message);
     console.log(error);
     throw error;
