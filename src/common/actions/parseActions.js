@@ -10,9 +10,11 @@ function initParse(){
 }
 
 function parseError(error) {
+  if (error == 'unauthorized'){
     alert(error.message);
     console.log(error);
     throw error;
+  }
 }
 
 export function receiveAuth() {
