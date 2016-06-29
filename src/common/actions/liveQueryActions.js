@@ -12,6 +12,14 @@ function initParse(){
   }
 }
 
+function parseError(error) {
+  if (typeof error !== 'undefined' && typeof error.message !== 'undefined'){
+    alert(error.message);
+    console.log(error);
+    throw error;
+  }
+}
+
 var subscription;
 function getSubscription(){
   initParse();

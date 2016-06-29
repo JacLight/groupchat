@@ -9,13 +9,6 @@ import ParseReact from 'parse-react';
 
 var parseInit;
 function initParse(){
-<<<<<<< Updated upstream
-  Parse.initialize('Application_ID', 'JavaScript_key');
-}
-
-function parseError(error) {
-  if (typeof error !== 'undefined' && typeof error.message !== 'undefined' && error.message != 'unauthorized'){
-=======
   if (typeof parseInit === 'undefined'){
       parseInit = Parse.initialize('PJCCTCT3NT7ze5BHbMwXuXUUNBYQ0ds2zvxFEioO', 'e3XFBfzsMOWuKb9Kqgn7XcfYLSPwswYiajVS3fGW');
   }
@@ -23,7 +16,6 @@ function parseError(error) {
 
 function parseError(error) {
   if (typeof error !== 'undefined' && typeof error.message !== 'undefined'){
->>>>>>> Stashed changes
     alert(error.message);
     console.log(error);
     throw error;
