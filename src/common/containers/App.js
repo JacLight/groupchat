@@ -15,10 +15,6 @@ class App extends React.Component {
     const {dispatch} = this.props;
     dispatch(initEnvironment());
     dispatch(signOut());
-<<<<<<< Updated upstream
-    //dispatch(signOut());
-=======
->>>>>>> Stashed changes
   }
   handleSignOut(){
     const { dispatch } = this.props;
