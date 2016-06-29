@@ -14,7 +14,6 @@ import cors from 'cors';
 import webpack from 'webpack';
 import webpackConfig from '../../webpack.config.dev'
 const compiler = webpack(webpackConfig);
-import User from './models/User.js';
 import passport from 'passport';
 require('../../config/passport')(passport);
 import SocketIo from 'socket.io';

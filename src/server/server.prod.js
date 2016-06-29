@@ -12,7 +12,6 @@ import routes from '../common/routes';
 import { createLocation } from 'history';
 import cors from 'cors';
 
-import User from './models/User.js';
 import passport from 'passport';
 require('../../config/passport')(passport);
 import SocketIo from 'socket.io';

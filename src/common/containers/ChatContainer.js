@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import * as actions from '../actions/actions';
+import * as liveQuery from '../actions/liveQueryActions';
 import {receiveAuth} from '../actions/parseActions';
 import Chat from '../components/Chat';
 import { bindActionCreators } from 'redux';
@@ -15,6 +16,10 @@ class ChatContainer extends Component {
       dispatch(receiveAuth());
     }
     dispatch(actions.fetchMessages());
+    //dispatch(liveQuery.subscribeToMessageUpdate());
+  }
+  componentWillUnmount() {
+    dispatch(liveQuery.unSubscribeToMessageUpdate());
   }
   render() {
     return (
